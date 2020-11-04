@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: RoundRobin
+    ports:
+      - "51010:4567"
+
+volumes:
+  mongodb:
+  mongodb_config:
